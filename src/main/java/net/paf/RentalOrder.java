@@ -3,9 +3,9 @@ package net.paf;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class RentalOrder extends Main {
+class RentalOrder extends Main {
 
-    public RentalOrder(WebDriver webDriver) {
+    protected RentalOrder(WebDriver webDriver) {
         super(webDriver);
     }
 
@@ -108,7 +108,7 @@ public class RentalOrder extends Main {
         return webDriver.findElement(buttonViewOrder).isDisplayed();
     }
 
-    public  void CommentForСourier(String text) {
+    public void writeCommentForCourier(String text) {
         webDriver.findElement(commentСourier).sendKeys(text);
     }
 

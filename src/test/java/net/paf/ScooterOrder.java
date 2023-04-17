@@ -23,7 +23,7 @@ public class ScooterOrder extends BeforeAfter {
         rentalOrder.clickRentalPeriod();
         rentalOrder.click7Day();
         rentalOrder.clickBlack();
-        rentalOrder.CommentForСourier("Цвет самоката можно любой");
+        rentalOrder.writeCommentForCourier("Цвет самоката можно любой");
         rentalOrder.clickButtonOrderMiddle();
         rentalOrder.clickYesButtonConfirmOrder();
         boolean isDisplayed = rentalOrder.displayingButtonViewOrder();
